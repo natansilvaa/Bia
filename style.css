@@ -2,11 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
     --font1: verdana, genera, tahoma, sans-serif;
-    --font2: 'possion one', cursive;
+    --font2: 'passion one', cursive;
     --font3: 'sriracha', cursive;
 }
 *{
@@ -115,4 +114,14 @@ footer{
     text-align: center;
     padding: 15px;
     font-size: 1rem;
+}
+
+section.imagem {
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    section.imagem {
+        background-attachment: scroll; /* melhor para compatibilidade mobile */
+    }
 }
