@@ -104,6 +104,11 @@ section#img02{
     background-position: right center;
     background-size: cover;
 }
+section#img04{
+    background-image: url(imagens/img04.png);
+    background-position: right center;
+    background-size: cover;
+}
 footer{
     background-color: black;
     color: white;
