@@ -91,6 +91,14 @@ section.imagem >p{
     text-shadow: 1px 1px 0px black;
 
 }
+section.normal >p{
+   display: inline-block;
+   padding: 5px;
+    background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 1px 1px 0px black;
+    color: white;
+
+}
 section#img-001{
     background-image: url(imagens/img-001.png);
     background-position: right center;
@@ -98,7 +106,13 @@ section#img-001{
 }
 section#img-002{
     background-image: url(imagens/img-002.png);
-    
+    background-position: right center;
+    background-size: cover;
+}
+section#img-003{
+    background-image: url(imagens/img-003.png);
+    background-position: right center;
+    background-size: cover;
 }
 
 section#img01{
