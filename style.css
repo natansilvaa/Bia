@@ -91,6 +91,16 @@ section.imagem >p{
     text-shadow: 1px 1px 0px black;
 
 }
+section#img-001{
+    background-image: url(imagens/img-001.png);
+    background-position: right center;
+    background-size: cover;
+}
+section#img-002{
+    background-image: url(imagens/img-002.png);
+    background-position: right center;
+    background-size: cover;
+}
 
 section#img01{
     background-image: url(imagens/img01.png);
