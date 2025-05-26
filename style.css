@@ -84,6 +84,7 @@ section.imagem{
     background-attachment: fixed;
 }
 
+
 section.imagem >p{
    display: inline-block;
    padding: 5px;
@@ -94,9 +95,9 @@ section.imagem >p{
 section.normal >p{
    display: inline-block;
    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(255, 255, 255, 0.192);
     text-shadow: 1px 1px 0px black;
-    color: white;
+    margin-top: 20px;
 
 }
 section#img-001{
