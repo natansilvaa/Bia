@@ -92,6 +92,7 @@ section.imagem >p{
     text-shadow: 1px 1px 0px black;
 
 }
+/*  
 section.normal >p{
    display: inline-block;
    padding: 5px;
@@ -115,7 +116,7 @@ section#img-003{
     background-position: right center;
     background-size: cover;
 }
-
+*/
 section#img01{
     background-image: url(imagens/img01.png);
     background-position: right center;
