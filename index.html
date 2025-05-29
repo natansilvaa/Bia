@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cordel Moderno</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=play_circle" />
+    <title>Cordel Moderno</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,8 +18,9 @@
                 <audio id="audio" src="./musicas/Envolvidão.mp4"></audio>
                 <div class="controls">
                     <button id="playPause"><span class="material-symbols-outlined">
-play_circle
-</span></button>
+                        play_circle
+                        </span>
+                   </button>
                     <input type="range" id="seekBar" value="0">
                 </div>
             </div>
@@ -127,31 +129,41 @@ play_circle
         <p>Site criado por <a href="https://www.instagram.com/natankrs_?igsh=Y3JoZDl1cHhuMDRr&utm_source=qr" target="_blank">
             Natan silva</a> para a sr.<a href="#"> Bia</a> </p> 
     </footer>
-       <script>
-            const audio = document.getElementById('audio');
-            const playPause = document.getElementById('playPause');
-            const seekBar = document.getElementById('seekBar');
+       <footer>
+    <p>Site criado por 
+        <a href="https://www.instagram.com/natankrs_?igsh=Y3JoZDl1cHhuMDRr&utm_source=qr" target="_blank">
+            Natan Silva
+        </a> 
+        para a sr.<a href="#"> Bia</a>
+    </p> 
+</footer>
 
-            playPause.addEventListener('click', () => {
-                if (audio.paused) {
-                audio.play();
-                playPause.innerHTML = '⏸';
-                } else {
-                audio.pause();
-                playPause.innerHTML = 'i love you ❤';
-                }
-            });
+<script>
+  const audio = document.getElementById('audio');
+const playPause = document.getElementById('playPause');
+const seekBar = document.getElementById('seekBar');
 
-            // Atualizar a barra de progresso
-            audio.addEventListener('timeupdate', () => {
-                seekBar.value = (audio.currentTime / audio.duration) * 100;
-            });
+const icon = playPause.querySelector('span');
 
-            // Pular para outra parte da música
-            seekBar.addEventListener('input', () => {
-                audio.currentTime = (seekBar.value / 100) * audio.duration;
-            });
-        </script>
+playPause.addEventListener('click', () => {
+    if (audio.paused) {
+        audio.play();
+        icon.textContent = 'pause_circle';
+    } else {
+        audio.pause();
+        icon.textContent = 'play_circle';
+    }
+});
+
+audio.addEventListener('timeupdate', () => {
+    seekBar.value = (audio.currentTime / audio.duration) * 100;
+});
+
+seekBar.addEventListener('input', () => {
+    audio.currentTime = (seekBar.value / 100) * audio.duration;
+});
+</script>
+
 
 </body>
 </html>
