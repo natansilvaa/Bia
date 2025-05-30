@@ -13,6 +13,12 @@ body{
     margin-right: 15px;
 }
 
+.container p{
+    color: #03e9f4;
+   font-family: "Great Vibes", cursive;
+}
+
+
 .bot{
     margin: auto;
 }
@@ -126,3 +132,4 @@ body{
         width: 90%;
     }
 }
+
