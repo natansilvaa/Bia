@@ -1,4 +1,17 @@
+body{
+    background-color: #172031;
+    height: 100vh;
+    width: 100vw;
+}
 
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.bot{
+    margin: auto;
+    margin-top: 50vh;
+}
 .btn{
     position: relative;
     display: inline-block;
