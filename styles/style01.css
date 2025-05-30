@@ -4,6 +4,13 @@ body{
     width: 100vw;
     margin: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --font1: verdana, genera, tahoma, sans-serif;
+    --font2: 'passion one', cursive;
+    --font3: 'sriracha', cursive;
+}
 
 .container{
     display: flex;
@@ -16,11 +23,13 @@ body{
 .container p{
     color: #03e9f4;
    font-family: "Great Vibes", cursive;
+   font-size: 1.4rem;
 }
 
 
 .bot{
     margin: auto;
+    
 }
 .btn{
     position: relative;
@@ -35,6 +44,7 @@ body{
     margin-top: 20px;
     transition: .5s;
     overflow: hidden;
+    
 }
 
 .btn:hover{
