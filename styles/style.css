@@ -186,7 +186,7 @@ section.imagem {
     border-radius: 10px;
     outline: none;
     cursor: pointer;
-    
+    margin: -10px;
 }
 
 #seekBar::-webkit-slider-thumb {
@@ -208,4 +208,8 @@ section.imagem {
     box-shadow: 0 0 5px #ffffff;
 }
 
+.volume{
+    padding:0;
+    margin-left:0;
+}
 
