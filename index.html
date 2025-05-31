@@ -21,6 +21,23 @@
             </a>
         </div>
     </div>
-    
+    <script>
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerHTML = '❤️'; // Você pode trocar por outros símbolos também
+
+        heart.style.left = Math.random() * window.innerWidth + 'px';
+        heart.style.animationDuration = (Math.random() * 2 + 3) + 's'; // duração da queda
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 5000); // remove após 5 segundos
+    }
+
+    setInterval(createHeart, 200); // frequência da geração
+</script>
 </body>
 </html>

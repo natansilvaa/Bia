@@ -1,11 +1,26 @@
 body{
-    background-color: #172031;
+    background-color: #000;
     height: 100vh;
     width: 100vw;
     margin: 0;
 }
 
+   .heart {
+        position: fixed;
+        top: -10px;
+        color: red;
+        font-size: 12px;
+        animation: fall linear;
+        pointer-events: none;
+        z-index: 9999;
+    }
 
+    @keyframes fall {
+        to {
+            transform: translateY(100vh) rotate(360deg);
+            opacity: 0;
+        }
+    }
 .container{
     display: flex;
     flex-direction: column;
