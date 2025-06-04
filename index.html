@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,8 @@
     function createHeart() {
         const heart = document.createElement('div');
         heart.classList.add('heart');
-        heart.innerHTML = '🤍'; // Você pode trocar por outros símbolos também
+        heart.innerHTML = '🤍 '; // Você pode trocar por outros símbolos também
+        
 
         heart.style.left = Math.random() * window.innerWidth + 'px';
         heart.style.animationDuration = (Math.random() * 2 + 3) + 's'; // duração da queda
@@ -34,10 +35,14 @@
 
         setTimeout(() => {
             heart.remove();
-        }, 5000); // remove após 5 segundos
-    }
+        }, 5000);
 
-    setInterval(createHeart, 200); // frequência da geração
+    }
+    
+
+    setInterval(createHeart, 200); 
+
 </script>
+
 </body>
 </html>
