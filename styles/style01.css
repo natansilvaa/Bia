@@ -27,7 +27,6 @@ body{
     margin-right: 19px;
     text-align: center;
     padding: 20px;
-    width: 50%;
     
 }
 
@@ -148,9 +147,12 @@ body{
          bottom: 100%; }
 }
 
-@media (max-width:405px){
-    .login{
-        width: 90%;
+@media (max-width:305px){
+    .container{
+        width:60%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
     }
 }
 
