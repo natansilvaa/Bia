@@ -1,21 +1,5 @@
 
 
-function adicionarLista() {
-  const area = parseFloat(document.getElementById("btnAdd").dataset.area);
-  const preco = parseFloat(document.getElementById("btnAdd").dataset.preco);
-  const descricao = document.getElementById("btnAdd").dataset.descricao;
-
-  const item = { descricao, area, preco };
-  lista.push(item);
-
-  atualizarLista();
-
-  document.getElementById("btnAdd").style.display = "none";
-
-  document.getElementById("area").innerText = "Área:";
-  document.getElementById("preco").innerText = "Preço:";
-}
-
 function atualizarLista() {
   const listaResultados = document.getElementById("listaResultados");
   const totalGeral = document.getElementById("totalGeral");
