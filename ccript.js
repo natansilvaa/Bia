@@ -1,19 +1,5 @@
 
 
-  const area = altura * largura;
-  const preco = area * valor * quantidade;
-
-  document.getElementById("area").innerText = `Área: ${area.toFixed(3)} m²`;
-  document.getElementById("preco").innerText = `Preço: R$ ${preco.toFixed(3)}`;
-
-  // Mostra o botão adicionar
-  const btnAdd = document.getElementById("btnAdd");
-  btnAdd.style.display = "inline-block";
-  btnAdd.dataset.area = area;
-  btnAdd.dataset.preco = preco;
-  btnAdd.dataset.descricao = descricao;
-}
-
 function adicionarLista() {
   const area = parseFloat(document.getElementById("btnAdd").dataset.area);
   const preco = parseFloat(document.getElementById("btnAdd").dataset.preco);
