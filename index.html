@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <title>i love Bia</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>neneca</title>
     
 </head>
 <body>
@@ -17,7 +18,7 @@
            
             <a href="musica.html" class="btn"">
                 <span></span><span></span><span></span><span></span>
-                click!
+                clique aqui!
             </a>
         </div>
     </div>
@@ -25,7 +26,8 @@
     function createHeart() {
         const heart = document.createElement('div');
         heart.classList.add('heart');
-        heart.innerHTML = '🤍'; // Você pode trocar por outros símbolos também
+        heart.innerHTML = '🤍 '; // Você pode trocar por outros símbolos também
+        
 
         heart.style.left = Math.random() * window.innerWidth + 'px';
         heart.style.animationDuration = (Math.random() * 2 + 3) + 's'; // duração da queda
@@ -34,10 +36,14 @@
 
         setTimeout(() => {
             heart.remove();
-        }, 5000); // remove após 5 segundos
-    }
+        }, 5000);
 
-    setInterval(createHeart, 200); // frequência da geração
+    }
+    
+
+    setInterval(createHeart, 200); 
+
 </script>
+
 </body>
 </html>
